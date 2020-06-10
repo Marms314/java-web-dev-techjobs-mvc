@@ -36,6 +36,10 @@
 
     <hr />
 
+    <div th:if = "${jobs}">
+        <p th:if="${jobs.isEmpty()}">No Results!</p>
+    </div>
+
     <div th:replace="fragments :: jobs-table"></div>
 
 </div>
